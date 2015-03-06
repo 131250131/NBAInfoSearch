@@ -14,5 +14,7 @@ public class Match {
 	tempTeam LTeam;
 	tempTeam RTeam;
 	
+	ReadFile matchreader = new ReadFile();
+	
 	
 }
