@@ -1,0 +1,43 @@
+import java.util.ArrayList;
+
+//这个类用于存储比赛txt里的球队数据
+
+public class tempTeam {
+	//本场总进攻回合数（*****用于更新*****）
+		int attackRounds;
+	//本场球队助攻数（*****用于更新*****）
+		int teamAssists;
+	//本场球队投篮命中数（*****用于更新*****）
+		int teamFG ;
+	//本场球队投篮出手次数（*****用于更新*****）
+		int teamFGTry ;
+	//本场球队三分命中数（*****用于更新*****）
+		int team3FG ;
+	//本场球队三分出手次数（*****用于更新*****）
+		int team3FGTry ;
+	//本场球队球队罚球命中数（*****用于更新*****）
+		int teamFTG;
+	//本场球队罚球出手数（*****用于更新*****）
+		int teamFTGTry;
+	//本场球队进攻篮板数（*****用于更新*****）
+		int teamOffenceRebounds;
+	//本场球队防守篮板数（*****用于更新*****）
+		int teamDeffenceRebounds;
+	//本场球队总篮板数（*****用于更新*****）
+		int teamTotalRebounds;
+	//本场球队抢断数（*****用于更新*****）
+		int teamSteals;
+	//本场球队盖帽数（*****需要更新*****）
+		int teamBlocks;
+	//本场球队失误数（*****需要更新*****）
+		int teamTurnovers;
+	//本场球队犯规数（*****需要更新*****）
+		int teamFouls;
+	//本场球队总得分数（*****需要更新*****）
+		int teamScores;
+		
+	//球队的本场球员列表
+	ArrayList<PlayerE> playlist = new ArrayList<PlayerE>();
+	
+	
+}
