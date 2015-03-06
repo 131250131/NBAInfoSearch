@@ -7,9 +7,15 @@ public class Team {
 	
 	//球队的编号；
 		int teamID;
-		
+	//球队比赛场数，胜率；
+		int compGames;
+		int winGames;
+		int losGames;
+		double winRate;
 		
 //接下来是球队赛季总数据；	
+	//总进攻回合数
+		int attackRounds;
 	//球队助攻数
 		int teamAssists ;
 	//球队投篮命中数
@@ -18,7 +24,9 @@ public class Team {
 		int teamFGTry ;
 	//球队三分命中数
 		int team3FG ;
-	//球队罚球命中数
+	//球队三分出手次数
+		int team3FGTry ;
+	//球队球队罚球命中数
 		int teamFTG;
 	//球队罚球出手数
 		int teamFTGTry;
@@ -46,12 +54,20 @@ public class Team {
 		int aver_teamFG ;
 	//球队场均投篮出手次数
 		int aver_teamFGTry ;
+	//球队投篮命中率
+		double teamFGP;
 	//球队场均三分命中数
-		int aver_team3FG ;
+		int aver_team3FG;
+	//球队场均三分出手次数
+		int aver_team3FGTry;
+	//球队三分命中率
+		double team3FGP; 
 	//球队场均罚球命中数
 		int aver_teamFTG;
 	//球队场均罚球出手数
 		int aver_teamFTGTry;
+	//罚球命中率	
+		double teamFTP; 
 	//球队场均进攻篮板数
 		int aver_teamOffenceRebounds;
 	//球队场均防守篮板数
@@ -68,5 +84,15 @@ public class Team {
 		int aver_teamFouls;
 	//球队场均总得分数
 		int aver_teamScores;
-		
+	//球队进攻效率：
+		double teamOffE;
+	//球队防守效率
+		double teamDefE;
+	//球队篮板效率
+		double teamRebE;
+	//球队抢断效率
+		double teamSteE;
+	//球队助攻效率
+		double teamAssE;
+	
 }
