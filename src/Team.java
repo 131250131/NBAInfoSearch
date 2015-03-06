@@ -1,50 +1,70 @@
 public class Team {
 	/*这是一个球队的整体信息*/
 	
+	//首先是最基本的信息
+	
+	//球队全名 │ 缩写│ 所在地 │ 赛区│ 分区 │ 主场 │ 建立时间║
+	
+	//球队名称： 
+		String teamName;
+	//球队缩写：
+		String shortName;
+	//球队所在地
+		String location;
+	//赛区
+		boolean isEast;
+	//分区
+		String division;
+	//球馆名称
+		String gymName;
+	//建立时间
+		int birthYear;
+	
 	/*
 	 * 更新这个类需要哪些数据；
 	 * */
 	
+	
 	//球队的编号；
 		int teamID;
-	//球队比赛场数，胜率；
+	//球队比赛场数，胜率；（*****需要更新*****）
 		int compGames;
 		int winGames;
 		int losGames;
 		double winRate;
 		
 //接下来是球队赛季总数据；	
-	//总进攻回合数
+	//总进攻回合数（*****需要更新*****）
 		int attackRounds;
-	//球队助攻数
-		int teamAssists ;
-	//球队投篮命中数
+	//球队助攻数（*****需要更新*****）
+		int teamAssists;
+	//球队投篮命中数（*****需要更新*****）
 		int teamFG ;
-	//球队投篮出手次数
+	//球队投篮出手次数（*****需要更新*****）
 		int teamFGTry ;
-	//球队三分命中数
+	//球队三分命中数（*****需要更新*****）
 		int team3FG ;
-	//球队三分出手次数
+	//球队三分出手次数（*****需要更新*****）
 		int team3FGTry ;
-	//球队球队罚球命中数
+	//球队球队罚球命中数（*****需要更新*****）
 		int teamFTG;
-	//球队罚球出手数
+	//球队罚球出手数（*****需要更新*****）
 		int teamFTGTry;
-	//球队进攻篮板数
+	//球队进攻篮板数（*****需要更新*****）
 		int teamOffenceRebounds;
-	//球队防守篮板数
+	//球队防守篮板数（*****需要更新*****）
 		int teamDeffenceRebounds;
-	//球队总篮板数
+	//球队总篮板数（*****需要更新*****）
 		int teamTotalRebounds;
-	//球队抢断数
+	//球队抢断数（*****需要更新*****）
 		int teamSteals;
-	//球队盖帽数
+	//球队盖帽数（*****需要更新*****）
 		int teamBlocks;
-	//球队失误数
+	//球队失误数（*****需要更新*****）
 		int teamTurnovers;
-	//球队犯规数
+	//球队犯规数（*****需要更新*****）
 		int teamFouls;
-	//球队总得分数
+	//球队总得分数（*****需要更新*****）
 		int teamScores;
 		
 //这是球队的平均信息；
