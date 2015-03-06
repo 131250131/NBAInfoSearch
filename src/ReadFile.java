@@ -3,13 +3,14 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+//最后把static去掉
 public class ReadFile {
 	 static String read;
+	 static Stringoperator operator;
 	 public ReadFile() {
-     }
-    
-     public static boolean readfile(String filepath) throws FileNotFoundException, IOException {
-             try {
+     } 
+     public static boolean readfile(String filepath,String type) throws FileNotFoundException, IOException {    
+    	 try {
                      File file = new File(filepath);
                      if (!file.isDirectory()) {
                           
@@ -33,14 +34,24 @@ public class ReadFile {
                                              */
                                     	 FileReader fileread = new FileReader(readfile); 
                                     	 BufferedReader bufread = new BufferedReader(fileread); 
+                                    	 if(type.equals("player")){
                                     	 while ((read = bufread.readLine()) != null )
                                     	 {
-                                    		 String[] list=read.split("/;");
-                                    		 System.out.println(read);
+                                    		 operator=new Stringoperator(read);
+                                             operator.playeroperaator();
+                                             char[] pl=read.toCharArray();
+                                    		 System.out.println(pl[8]);
+                                    	 }
+                                    	 }
+                                    	 if(type.equals("match")){
+                                    		 
+                                    	 }
+                                    	 if(type.equals("team")){
+                                    		 
                                     	 }
 
                                      } else if (readfile.isDirectory()) {
-                                             readfile(filepath + "\\" + filelist[i]);
+                                             readfile(filepath + "\\" + filelist[i],type);
                                      }
                              }
 
@@ -57,7 +68,7 @@ public class ReadFile {
      
      public static void main(String[] args) {
          try {
-                 readfile("C:\\Users\\apple\\Desktop\\test");
+                 readfile("C:\\Users\\apple\\Desktop\\player","player");
                  //deletefile("D:/file");
          } catch (FileNotFoundException ex) {
          } catch (IOException ex) {
