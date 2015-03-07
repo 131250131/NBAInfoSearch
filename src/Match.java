@@ -11,8 +11,8 @@
  *
  * */
 public class Match {
-	tempTeam LTeam;
-	tempTeam RTeam;
+	TempTeam LTeam;
+	TempTeam RTeam;
 	
 	ReadFile matchreader = new ReadFile();
 	

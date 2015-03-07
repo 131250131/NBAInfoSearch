@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 //这个类用于存储比赛txt里的球队数据
 
-public class tempTeam {
+public class TempTeam {
 	//本场总进攻回合数（*****用于更新*****）
 		int attackRound=0;
 	//本场球队助攻数（*****用于更新*****）
@@ -37,11 +37,11 @@ public class tempTeam {
 		int teamScores=0;
 		
 	//球队的本场球员列表
-	ArrayList<PlayerE> playlist = new ArrayList<PlayerE>();
+	ArrayList<TempPlayer> playlist = new ArrayList<TempPlayer>();
 	
 	//计算本场球队的总数居
 	void sumOfData(){
-		for(PlayerE tempPlayer : playlist){
+		for(TempPlayer tempPlayer : playlist){
 			//attackRound += tempPlayer;
 			//这里缺一个数据
 		}
