@@ -2,7 +2,9 @@ import java.util.ArrayList;
 
 //这个类用于存储比赛txt里的球队数据
 
-public class tempTeam {
+public class TempTeam {
+	//球队的id
+		int teamID;
 	//本场总进攻回合数（*****用于更新*****）
 		int attackRound=0;
 	//本场球队助攻数（*****用于更新*****）
