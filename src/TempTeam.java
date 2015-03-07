@@ -36,15 +36,17 @@ public class TempTeam {
 		int teamFouls=0;
 	//本场球队总得分数（*****需要更新*****）
 		int teamScores=0;
-	
+	//本场球队比赛时间
+		int teamTime=0;
+		
 	//球队的本场球员列表
 		ArrayList<TempPlayer> playlist = new ArrayList<TempPlayer>();
 
 	//计算本场球队的总数居
 		void sumOfData(){
 			for(TempPlayer tempPlayer : playlist){
-				//attackRound += tempPlayer;
-				//这里缺一个数据
+				
+				
 			}
 		}
 
