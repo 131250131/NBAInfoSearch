@@ -35,15 +35,23 @@ public class ReadFile {
                                     	 FileReader fileread = new FileReader(readfile); 
                                     	 BufferedReader bufread = new BufferedReader(fileread); 
                                     	 if(type.equals("player")){
+                                    		 operator=new Stringoperator("");
+                                    		 Player tempplayer =new Player();
                                     	 while ((read = bufread.readLine()) != null )
                                     	 {
-                                    		 operator=new Stringoperator(read);
+                                    		 operator.setstring(read);
                                              operator.playeroperaator();
-                                             char[] pl=read.toCharArray();
-                                    		 System.out.println(pl[8]);
+                                            
                                     	 }
                                     	 }
                                     	 if(type.equals("match")){
+                                    		 Match tempmatch=new Match();
+                                    		 operator=new Stringoperator("");
+                                    		 while ((read = bufread.readLine()) != null )
+                                        	 {
+                                                 operator.setstring(read);
+                                        		 operator.matchoperator(tempmatch);
+                                        	 }
                                     		 
                                     	 }
                                     	 if(type.equals("team")){
