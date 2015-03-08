@@ -35,7 +35,7 @@ public class Player {
 	//9.球员学校或国家
 		String School;
 	
-	//10.球员ID
+	//10.球员ID (*****要传*****)
 		int playerID;
 		
 	//11.球员参赛场数 
