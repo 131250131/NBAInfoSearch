@@ -1,7 +1,7 @@
 
 public class Player {
 	
-	//球员类， 用序列号进行保存
+	//球员类， 用序列号进行保存12345test
 	
 	//1.球员名称 （球员名称作为查找唯一标识）
 		//格式类似：Anthony Tolliver
